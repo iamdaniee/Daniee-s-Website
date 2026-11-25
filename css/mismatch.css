@@ -1,0 +1,75 @@
+/* HEADER */
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(15px, 3vw, 24px);
+    text-shadow: 0 0 10px white;
+}
+/* BODY */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Garamond", serif;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(12px, 3vw, 20px);
+    text-shadow: 0 0 10px white;
+}
+
+.mismatch {
+    position: relative;
+
+    width: min(100vw, 177.78svh);
+    aspect-ratio: 16 / 9;
+
+    margin: auto;
+}
+
+/* BACKGROUND IMAGE */
+.mismatchbg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* DOOR INTERACT */
+.mismatchexit {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 53.9%;
+    top: 17%;
+
+    /* DOOR SIZE */
+    width: 37.5%;
+    height: 84%;
+
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+/* HOVER EFFECT */
+.mismatchexit:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}

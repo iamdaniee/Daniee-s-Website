@@ -1,0 +1,131 @@
+/* HEADER */
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: clamp(15px, 3vw, 24px);
+    text-shadow: 0 0 10px white;
+}
+/* BODY */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Garamond", serif;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(12px, 3vw, 20px);
+    text-shadow: 0 0 10px white;
+}
+
+/* MAIN ENTRANCE */
+.entrance {
+    position: relative;
+
+    width: min(100vw, 177.78svh);
+    aspect-ratio: 16 / 9;
+
+    margin: auto;
+}
+
+/* BACKGROUND IMAGE */
+.entranceimage {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* DOOR INTERACT */
+.hallwaydoor {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 59.25%;
+    top: 16.15%;
+
+    /* DOOR SIZE */
+    width: 37.5%;
+    height: 84%;
+
+    background-image: url("images/exhibitdoor.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+/* HOVER EFFECT */
+.hallwaydoor:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}
+
+/* CLICKABLE PORTRAIT */
+.portraitbutton {
+    position: absolute;
+
+    left: 16.1%;
+    top: 15.45%;
+
+    width: 16.25%;
+    height: 32.6%;
+
+    background-image: url("images/myportrait.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.portraitbutton:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}
+
+/* PORTRAIT OVERLAY */
+.portraitoverlay {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 2000;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* SHOW PORTRAIT */
+.portraitoverlay:target {
+    display: flex;
+}
+
+/* ENLARGED PORTRAIT */
+.portraitoverlay img {
+    max-width: 80vw;
+    max-height: 85vh;
+
+    object-fit: center;
+    cursor: pointer;
+}

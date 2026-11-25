@@ -1,0 +1,116 @@
+/* HEADER */
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(15px, 3vw, 24px);
+    text-shadow: 0 0 10px white;
+}
+/* BODY */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Garamond", serif;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(12px, 3vw, 20px);
+    text-shadow: 0 0 10px white;
+}
+
+/* WIDE GALLERY */
+.wideexhibit {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    background-color: black;
+}
+
+/* EXHIBIT CONTAINER */
+.exhibit {
+    position: relative;
+    width: max-content;
+    height: 100vh;
+}
+
+/* EXHIBIT IMAGE */
+.exhibitimage {
+    height: 100vh;
+    width: auto;
+    max-width: none;
+    display: block;
+}
+
+/* DOOR INTERACT */
+.exitdoor {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 1.215%;
+    top: 16.15%;
+
+    /* DOOR SIZE */
+    width: 5.20%;
+    height: 85%;
+
+    background-image: url("images/exhibitexit.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+/* HOVER EFFECT */
+.exitdoor:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}
+
+/* DOOR INTERACT */
+.mothpainting {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 94.65%;
+    top: 25.50%;
+
+    /* DOOR SIZE */
+    width: 3.6%;
+    height: 46.75%;
+
+    background-image: url("images/silkthemoth.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 10s ease-out;
+}
+
+/* HOVER EFFECT */
+.mothpainting:hover {
+    border: 1.5px solid red;
+    box-shadow: 0 0 1000px red;
+}

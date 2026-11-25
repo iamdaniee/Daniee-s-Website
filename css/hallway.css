@@ -1,0 +1,170 @@
+/* HEADER */
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(15px, 3vw, 24px);
+    text-shadow: 0 0 10px white;
+}
+/* BODY */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Garamond", serif;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(12px, 3vw, 20px);
+    text-shadow: 0 0 10px white;
+}
+
+/* HALLWAYS */
+.hallwaymain {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    background-color: black;
+}
+
+/* EXHIBIT CONTAINER */
+.hallsite {
+    position: relative;
+    width: max-content;
+    height: 100vh;
+}
+
+/* EXHIBIT IMAGE */
+.hallwaysite {
+    height: 100vh;
+    width: auto;
+    max-width: none;
+    display: block;
+}
+
+/* DOOR INTERACT */
+.exitdoor {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 5.2%;
+    top: 17%;
+
+    /* DOOR SIZE */
+    width: 14.4%;
+    height: 84%;
+
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+/* HOVER EFFECT */
+.exitdoor:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}
+
+.gallerydoor {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 24%;
+    top: 17.40%;
+
+    /* DOOR SIZE */
+    width: 14.4%;
+    height: 84%;
+
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.gallerydoor:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}
+
+.aboutdoor {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 42.7%;
+    top: 17.40%;
+
+    /* DOOR SIZE */
+    width: 14.4%;
+    height: 84%;
+
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.aboutdoor:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}
+
+.talentdoor {
+    position: absolute;
+
+    /* DOOR POSITION */
+    left: 61.5%;
+    top: 17.40%;
+
+    /* DOOR SIZE */
+    width: 14.4%;
+    height: 84%;
+
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.talentdoor:hover {
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+}

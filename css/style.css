@@ -1,0 +1,87 @@
+
+
+/* MAIN BODY */
+.mothmain {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    overflow: hidden;
+}
+
+/* CONTENT CONTAINER */
+.silkmothsite {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MOTH IMAGE */
+.mothsite {
+    max-width: 80vw;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+/* FIRST LINE */
+.typewriter {
+    display: block;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: white;
+    font-family: "Garamond", serif;
+    font-size: 24px;
+
+    animation:
+        typing 3s steps(28, end) 2s forwards,
+        deleting 1s steps(28, end) 7s forwards;
+}
+
+/* FIRST LINE TYPING */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 28ch; }
+}
+
+/* FIRST LINE DELETING */
+@keyframes deleting {
+    from { width: 28ch; }
+    to { width: 0; }
+}
+
+/* SECOND LINE */
+.typewriter2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: cover;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: red;
+    font-family: "Garamond", serif;
+    font-size: 75px;
+
+    animation:
+        typing2 5s steps(22, end) 10s forwards;
+}
+
+@keyframes typing2 {
+    from { width: 0; }
+    to { width: 20ch; }
+}
+
+
+
+/* COPYRIGHT - CS001*/
+/*Original Moth Image: https://ph.pinterest.com/pin/168673948523235220/*/
+/*All stock images came from Magnific.com*/
